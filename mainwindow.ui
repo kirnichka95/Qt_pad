@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>453</width>
+    <height>375</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Notepad</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTextEdit" name="textEdit">
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>453</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::DefaultContextMenu</enum>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Файл</string>
+    </property>
+    <addaction name="action_new"/>
+    <addaction name="action_open"/>
+    <addaction name="action_saveas"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>Правка</string>
+    </property>
+    <addaction name="action_undo"/>
+    <addaction name="action_copy"/>
+    <addaction name="action_paste"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>Вид</string>
+    </property>
+    <widget class="QMenu" name="menu_4">
+     <property name="title">
+      <string>Выравнивание</string>
+     </property>
+     <addaction name="action_alignLeft"/>
+     <addaction name="action_alignCenter"/>
+     <addaction name="action_alignRight"/>
+    </widget>
+    <addaction name="action_font"/>
+    <addaction name="menu_4"/>
+   </widget>
+   <widget class="QMenu" name="menu_5">
+    <property name="title">
+     <string>Найти</string>
+    </property>
+    <addaction name="action_search"/>
+    <addaction name="action_gotoStr"/>
+   </widget>
+   <widget class="QMenu" name="menu_6">
+    <property name="title">
+     <string>Справка</string>
+    </property>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_5"/>
+   <addaction name="menu_6"/>
+  </widget>
+  <action name="action_new">
+   <property name="text">
+    <string>Новый</string>
+   </property>
+  </action>
+  <action name="action_open">
+   <property name="text">
+    <string>Открыть</string>
+   </property>
+  </action>
+  <action name="action_saveas">
+   <property name="text">
+    <string>Сохранить как</string>
+   </property>
+  </action>
+  <action name="action_undo">
+   <property name="text">
+    <string>Отменить действие</string>
+   </property>
+  </action>
+  <action name="action_copy">
+   <property name="text">
+    <string>Копировать</string>
+   </property>
+  </action>
+  <action name="action_paste">
+   <property name="text">
+    <string>Вставить</string>
+   </property>
+  </action>
+  <action name="action_font">
+   <property name="text">
+    <string>Шрифт...</string>
+   </property>
+  </action>
+  <action name="action_alignLeft">
+   <property name="text">
+    <string>слева</string>
+   </property>
+  </action>
+  <action name="action_alignCenter">
+   <property name="text">
+    <string>центр</string>
+   </property>
+  </action>
+  <action name="action_alignRight">
+   <property name="text">
+    <string>справа</string>
+   </property>
+  </action>
+  <action name="action_search">
+   <property name="text">
+    <string>Поиск</string>
+   </property>
+  </action>
+  <action name="action_gotoStr">
+   <property name="text">
+    <string>Перейти к строке</string>
+   </property>
+  </action>
+  <action name="actionHgjgh">
+   <property name="text">
+    <string>апр</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
